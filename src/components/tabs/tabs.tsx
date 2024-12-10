@@ -1,7 +1,7 @@
 import {JSX} from 'react';
 import {Link, useSearchParams} from 'react-router-dom';
 import {AppRoute, Cities, QUERY_PARAMETER} from '../../const';
-import {CityName} from '../../types/city';
+import {CityName} from '../../types/city.ts';
 
 function Tabs(): JSX.Element {
   const cityEntries: CityName[] = Object.values(Cities);
