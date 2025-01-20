@@ -1,5 +1,5 @@
 import { JSX } from 'react';
-import ReviewItem from '../reviews-item/reviews-item';
+import ReviewsItem from '../reviews-item/reviews-item';
 import { Review, Reviews } from '../../types/reviews';
 
 interface ReviewsListProps {
@@ -14,7 +14,7 @@ function ReviewsList({ reviews }: ReviewsListProps): JSX.Element {
       </h2>
       <ul className="reviews__list">
         {reviews.slice(0, 10).map((review: Review) => (
-          <ReviewItem key={review.id} review={review} />
+          <ReviewsItem key={review.id} review={review} />
         ))}
       </ul>
     </>

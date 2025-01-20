@@ -6,7 +6,7 @@ interface ReviewItemProps {
   review: Review;
 }
 
-function ReviewItem({ review }: ReviewItemProps): JSX.Element {
+function ReviewsItem({ review }: ReviewItemProps): JSX.Element {
   const { user, rating, comment, date } = review;
   const ratingPercentage = `${rating * 20}%`;
 
@@ -38,4 +38,4 @@ function ReviewItem({ review }: ReviewItemProps): JSX.Element {
   );
 }
 
-export default ReviewItem;
+export default ReviewsItem;
